@@ -168,3 +168,26 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+
+@media (min-width: 780px) {
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+}
+
+@media (min-width: 900px) {
+	nav a {
+		font-size: 1.3rem;
+	}
+}
