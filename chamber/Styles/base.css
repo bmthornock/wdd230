@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+@media only screen and (min-width: 37.5em) {
+
+:root {
+  --primary-color: #133C55;
+  --secondary-color: #386FA4 ;
+  --accent1-color: #59A5D8;
+  --accent2-color: #ECFBFD;
+  --accent3-color: #84D2F6;
+
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+
+  --headline-color-on-white: #396E94; 
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #396E94;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #396E94  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #0dd4c3;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #0b1077;
+}
+
+body {
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+
+header {
+  display: inline-flex;
+  padding: 1em;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  max-width: max-content;
+  align-items: center;
+  justify-content: center;
+}
+
+header p{
+  flex-direction: column;
+}
+
+header #logo {
+  max-width: 300px
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation {
+    display: flex;
+}
+.navigation li {
+    display: block;
+flex: 1 1 auto;
+}
+.navigation a {
+    text-align: center;
+}
+.navigation li:first-child {
+    display: none;
+}
+}
+
+main div{
+    flex-direction: column;
+}
